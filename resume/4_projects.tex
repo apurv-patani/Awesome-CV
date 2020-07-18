@@ -1,42 +1,76 @@
 %-------------------------------------------------------------------------------
 %	SECTION TITLE
 %-------------------------------------------------------------------------------
-\cvsection{Projects}
+\cvsection{Academic Projects}
 
 %-------------------------------------------------------------------------------
 %	CONTENT
 %-------------------------------------------------------------------------------
-\begin{cvopensource}
+\begin{cventries}
+%---------------------------------------------------------
+  \cventry
+    {cse343 - machine learning} % Job title
+    {ML{\hspace{0.2em}\cdotp\hspace{0.2em}}DL | Classifying Driving Behaviour} % Organization
+    {} % Location
+    {} % Date(s)
+    {
+      \begin{cvitems}
+        \item {Idea : Classifying driving behaviour as normal, aggressive and drowsy using dash-cam videos.}
+        \item {Trained and tested on \href{http://www.robesafe.uah.es/personal/eduardo.romera/uah-driveset/}{UAH-DriveSet dataset}.}
+        \item {Implemented 3 DL models and 1 ML model with Conv-LSTM outperforming others with 92\% accuracy.}
+      \end{cvitems}
+    }
+%     \parbox[position][height][inner-pos]{width}{text}
+    {\multirow{2}{1.1cm}{\parbox{1\linewidth}{\vspace{0.1cm}}}}
 
 %---------------------------------------------------------
-  \cvproject
-    {Eye Tracker} % Organization/group
+  \cventry
+    {cse535 - mobile computing} % Job title
+    {Android App | Draw on Video Call} % Organization
+    {} % Location
+    {} % Date(s)
     {
-        The software for my thesis is written in C++ and makes use of several libraries for \textbf{image processing} (OpenCV), \textbf{machine learning} (FANN, dlib) and other tasks (Boost, Qt, CUDA).
+      \begin{cvitems}
+        \item {Idea : Live drawing over the video frames that are visible to both parties over a video call.}
+        \item {Helped in ideation of how live drawing will be implemented using firebase.}
+        \item {Implemented color palette, brush layout, multiple color support and smooth animation of publisher-subscriber containers switching.}
+      \end{cvitems}
     }
-    
+%     \parbox[position][height][inner-pos]{width}{text}
+    {\multirow{2}{1.1cm}{\parbox{1\linewidth}{\vspace{0.1cm}}}}
+
 %---------------------------------------------------------
-  \cvproject
-    {Memory Fields} % Organization/group
+  \cventry
+    {cse231 - operating systems} % Job title
+    {xv6 | Swapping{\hspace{0.2em}\cdotp\hspace{0.2em}}Demand Paging} % Organization
+    {} % Location
+    {} % Date(s)
     {
-		What started as an attempt to explore how \textbf{computer vision} and \textbf{art} may intersect (together with \textbf{\href{http://ablab.org}{Dan Norton}} and \textbf{\href{http://vi.cvc.uab.es/fernando-vilarino}{Dr. Fernando Vilari\~no}}), resulted in an interactive application resembling a DJ deck. The system allows mixing collections of sounds and images to create compositions that react to changes in the sounds, and saving them in a \textit{field of memories}.\\
-        The project was presented in \textbf{\href{http://sonarplusd.com/}{Sonar +D 2015}} and is currently installed at \textbf{\href{http://l3.cvc.uab.es/}{Volpelleres Living Lab}}.
+      \begin{cvitems}
+        \item {Implemented Swapping : When OS runs out of RAM, swap out pages to disk to reuse them.}
+        \item {Implemented Demand Paging : Lazily mapping physical page corresponding to a virtual page when it is dereferenced. Get a new physical page, map it and restore the content from disk if it was swapped earlier.}
+      \end{cvitems}
     }
+%     \parbox[position][height][inner-pos]{width}{text}
+    {\multirow{2}{1.1cm}{\parbox{1\linewidth}{\vspace{0.1cm}}}}
+
 %---------------------------------------------------------
-    
-%---------------------------------------------------------
-  \cvproject
-    {Broquil} % Organization/group
+  \cventry
+    {cse201a - advanced programming} % Job title
+    {Superstore Management Desktop App} % Organization
+    {} % Location
+    {} % Date(s)
     {
-       A Django-based management system for consumer cooperatives. It was a personal project with the objective of learning new skills (\textbf{Django, Bootstrap}, etc.) and keeping my old skills fresh (HTML, JS, CSS), while helping the community.
+      \begin{cvitems}
+        \item {Designed and developed a Java based management system for a Superstore using JavaFX and Scene Builder.}
+        \item {Application model designed using UML diagrams following the Object Oriented Design concepts.}
+        \item {Developed the server-client architecture using sockets and threads.}
+        \item {Implemented a database in Java and designed the FXML visual layouts using Scene Builder.}
+      \end{cvitems}
     }
+%     \parbox[position][height][inner-pos]{width}{text}
+    {\multirow{2}{1.1cm}{\parbox{1\linewidth}{\vspace{0.1cm}}}}
+
 %---------------------------------------------------------
-    
-%---------------------------------------------------------
-  \cvproject
-    {Dictionary} % Organization/group
-    {
-       My first take on creating an easy to use dictionary for minority languages is based on \textbf{ElasticSearch} and \textbf{AngularJS}. The first online prototype used an open source list of translations between Turkish and Zazaki language.
-    }
-%---------------------------------------------------------
-\end{cvopensource}
+
+\end{cventries}

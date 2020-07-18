@@ -408,7 +408,7 @@
       \ifthenelse{\isundefined{\@mobile}}%
         {}%
         {%
-          {\color{awesome}\faMobile}\acvHeaderIconSep\@mobile%
+          {\faMobile}\acvHeaderIconSep\@mobile%
           \setbool{isstart}{false}%
         }%
       \ifthenelse{\isundefined{\@email}}%
@@ -419,7 +419,7 @@
               \setbool{istart}{false}%
             }%
             {\acvHeaderSocialSep}%
-          \href{mailto:\@email}{{\color{awesome}\faEnvelope}\acvHeaderIconSep\@email}%
+          \href{mailto:\@email}{{\faEnvelope}\acvHeaderIconSep\@email}%
         }%
       \ifthenelse{\isundefined{\@homepage}}%
         {}%
@@ -439,7 +439,7 @@
               \setbool{istart}{false}%
             }%
             {\acvHeaderSocialSep}%
-          \href{https://github.com/\@github}{{\color{awesome}\faGithubSquare}\acvHeaderIconSep\@github}%
+          \href{https://github.com/\@github}{{\faGithubSquare}\acvHeaderIconSep\@github}%
         }%
       \ifthenelse{\isundefined{\@stackoverflowid}}%
         {}%
@@ -459,7 +459,7 @@
               \setbool{istart}{false}%
             }%
             {\acvHeaderSocialSep}%
-          \href{https://www.linkedin.com/in/\@linkedin}{{\color{awesome}\faLinkedinSquare}\acvHeaderIconSep\@linkedin}%
+          \href{https://www.linkedin.com/in/\@linkedin}{{\faLinkedinSquare}\acvHeaderIconSep\@linkedin}%
         }%
       \ifthenelse{\isundefined{\@twitter}}%
         {}%
@@ -556,7 +556,7 @@
   \vspace{-1.0mm}
   \setlength\tabcolsep{0pt}
   \setlength{\extrarowheight}{0pt}
-  \begin{tabular*}{0.5\textwidth - 0.3cm}{@{\extracolsep{\fill}} m{1.1cm} L{0.5\textwidth - 2.9cm} R{1.5cm}}
+  \begin{tabular*}{0.5\textwidth - 0.3cm}{@{\extracolsep{\fill}} m{0cm} L{0.5\textwidth - 2.9cm} R{1.5cm}}
     \ifempty{#2#3}
       {#6 & \entrypositionstyle{#1} & \entrydatestyle{#4} \\}
       {#6 & \entrytitlestyle{#2} & \entrylocationstyle{#3} \\
@@ -669,6 +669,7 @@
 % Define an environment for cvskill
 \newenvironment{cvskills}{%
   \begin{center}
+  \vspace{-4mm}
     \setlength\tabcolsep{1ex}
     \setlength{\extrarowheight}{0pt}
     \begin{tabular*}{0.5\textwidth - 0.3cm}[t]{@{\extracolsep{\fill}} R{2.5cm} L{0.5\textwidth - 2.8cm}}
